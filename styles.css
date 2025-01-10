@@ -1,0 +1,345 @@
+/* Navbar Refinements */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Increased padding */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links.active {
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Maintain contrast */
+    margin: 0 20px; /* Increased spacing */
+    font-weight: 500;
+    font-size: 18px; /* Slightly larger font size */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+}
+
+body {
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Hero Section Improvements */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    /* background: linear-gradient(to bottom, #f1f5f9, #e9ecef); Subtle gradient */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Larger heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #555; /* Adjusted color for better readability */
+    line-height: 1.6;
+}
+
+.hero .btn {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn:hover {
+    background-color: #e68a00;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Smooth scale-up effect */
+}
+
+/* Footer (Optional) */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* CTA Section */
+.cta-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cta-section .btn-secondary {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-secondary:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #ff9800;
+}
+
+/* Navbar Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ff9a9e" fill-opacity="1" d="M0,64L1440,128L1440,320L0,320Z"></path></svg>');
+    background-size: cover;
+}
+
+/* Set particles.js as a background */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send it to the background */
+    background-color: #1d0916; /* Optional fallback background color */
+}
+
+/* Positioning wrapper to overlay the content */
+.positioning-wrapper {
+    position: relative;
+    z-index: 1; /* Content sits above the background */
+}
+
+/* General Section Styling */
+.service-card {
+    background: linear-gradient(135deg, #2c2c54, #24243e);
+    color: #ffffff;
+    padding: 60px 0;
+    border-top: 4px solid #ff9a9e;
+}
+
+.service-card h2 {
+    color: #ff9a9e;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Individual Service Items */
+.service-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Icons */
+.service-icon i {
+    color: #ff9a9e;
+    transition: color 0.3s ease;
+}
+
+.service-item:hover .service-icon i {
+    color: #f3c623;
+}
+
+/* Text Styling */
+.service-title {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    font-weight: 700;
+}
+
+.service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 1.25rem;
+    }
+    .service-description {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Highlights Section */
+.highlights {
+    background: #f8f9fa;
+}
+.highlight-item {
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.highlight-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background: #24243e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: #ff9a9e;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #f3c623;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

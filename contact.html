@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Virtuo Designs for inquiries, collaborations, or to start your next project. We're here to bring your vision to life.">
+    <title>Contact Us | Virtuo Designs</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+            background: #24243e;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #ff9a9e;
+            text-decoration: none;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #f3c623;
+        }
+        .btn-primary:hover {
+            background-color: #f3c623;
+            border-color: #f3c623;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+            background-size: cover;
+            color: #333;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/favicon.png" alt="Virtuo Designs Logo" class="logo me-2" height="50px">
+            Virtuo Designs
+        </a>
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero hero-contact d-flex align-items-center text-center">
+        <div class="container">
+            <h1 class="display-4 text-white animate-fade-in">Contact Us</h1>
+            <p class="text-light lead animate-fade-in">We’d love to hear from you!</p>
+            <div class="mt-4 text-center">
+                <p><i class="fas fa-envelope"></i> Email: contact@virtuodesigns.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +27 68 3332 890</p>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2025 Virtuo Designs. All rights reserved. | Company Registration: 2025/014412/07</p>
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>        
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

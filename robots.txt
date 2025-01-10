@@ -1,0 +1,12 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Disallow:
+
+# Disallow access to specific private directories (if any)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /scripts/
+Disallow: /tmp/
+
+# Sitemap URL
+Sitemap: https://virtuodesigns.online/sitemap.xml

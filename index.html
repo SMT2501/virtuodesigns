@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtuo Designs brings your ideas to life through innovative web design and development. Discover professional solutions tailored to your needs.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Virtuo Designs</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+                /* Navbar */
+        .navbar {
+            background: #24243e;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #ff9a9e;
+            text-decoration: none;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #f3c623;
+        }
+
+        /* Hero Section */
+        /* .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c2c54, #24243e);
+            color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+        } */
+        .hero h1, .hero p {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero a {
+            animation: slideUp 1.5s ease-out;
+        }
+
+        /* Highlights Section */
+        .highlights {
+            background: #f8f9fa;
+        }
+        .highlight-item {
+            padding: 20px;
+            border-radius: 10px;
+            background: #ffffff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .highlight-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: #24243e;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #ff9a9e;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #f3c623;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/favicon.png" alt="Virtuo Designs Logo" class="logo me-2" height="50px">
+            Virtuo Designs
+        </a>
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <header class="hero bg-gradient d-flex align-items-center justify-content-center text-center">
+        <div id="particles-js"></div> <!-- Particles effect -->
+        <div class="container position-relative">
+            <h1 class="display-4 text-white animate-fade-in">Welcome to Virtuo Designs</h1>
+            <p class="text-light lead animate-fade-in">Bringing your ideas to life through innovative design and development.</p>
+            <a href="about.html" class="btn btn-primary btn-lg mt-3 animate-slide-up">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Highlights Section -->
+    <section class="highlights py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="highlight-item shadow">
+                        <i class="fas fa-trophy fa-3x mb-3 text-success"></i>
+                        <h4>Excellence</h4>
+                        <p>Delivering exceptional results in every project.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-item shadow">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h4>Collaboration</h4>
+                        <p>We work closely with clients to bring their vision to life.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="highlight-item shadow">
+                        <i class="fas fa-lightbulb fa-3x mb-3 text-warning"></i>
+                        <h4>Innovation</h4>
+                        <p>Pioneering creative solutions for modern challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <h2>Why Choose Virtuo Designs?</h2>
+        <p>We bring your ideas to life with innovative design, cutting-edge technology, and unmatched creativity.</p>
+        <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+      </div>
+      
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© 2025 Virtuo Designs. All rights reserved. | Company Registration: 2025/014412/07</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>        
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+    <script src="particles/particles.min.js"></script>
+    <script>
+        // Initialize particlesJS after the library is loaded
+        window.addEventListener("load", function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ff9a9e"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ff9a9e",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "attract": {
+                            "enable": false
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+    </script>
+
+    <script src="js/script.js" type="module"></script>
+
+    <!-- Particles.js Configuration -->
+    <script>
+        particlesJS.load('particles-js', 'particles/particles.json', function() {
+            console.log('Particles.js loaded successfully!');
+        });
+    </script>
+</body>
+</html>
