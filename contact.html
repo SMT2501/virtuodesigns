@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Virtuo Designs for inquiries, collaborations, or to start your next project. We're here to bring your vision to life.">
-    <title>Contact Us | Virtuo Designs</title>
+    <meta name="description" content="Contact Virtuo Designs, expert web developers in South Africa, for custom React, Flutter, and Bootstrap web development projects.">
+    <meta name="keywords" content="web developers, web development South Africa, contact web developers">
+    <meta property="og:title" content="Contact Virtuo Designs | Web Developers South Africa">
+    <meta property="og:description" content="Get in touch with Virtuo Designs for custom web development projects. We're here to bring your vision to life.">
+    <meta property="og:image" content="https://virtuodesigns.online/images/favicon.png">
+    <meta property="og:url" content="https://virtuodesigns.online/contact.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Virtuo Designs | Web Developers South Africa">
+    <meta name="twitter:description" content="Contact Virtuo Designs for innovative web development solutions.">
+    <meta name="twitter:image" content="https://virtuodesigns.online/images/favicon.png">
+    <title>Contact Virtuo Designs | Web Developers South Africa</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,16 +41,20 @@
             background-color: #f3c623;
             border-color: #f3c623;
         }
-
         body {
             background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
             background-size: cover;
             color: #333;
         }
-
-
-
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJCMW3BRWY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZJCMW3BRWY');
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -63,12 +77,11 @@
     <header class="hero hero-contact d-flex align-items-center text-center">
         <div class="container">
             <h1 class="display-4 text-white animate-fade-in">Contact Us</h1>
-            <p class="text-light lead animate-fade-in">We’d love to hear from you!</p>
+            <p class="text-light lead animate-fade-in">Ready to build your next web platform? Contact our expert web developers!</p>
             <div class="mt-4 text-center">
-                <p><i class="fas fa-envelope"></i> Email: contact@virtuodesigns.com</p>
-                <p><i class="fas fa-phone"></i> Phone: +27 68 3332 890</p>
+                <h3><a href="mailto:contact@virtuodesigns.online" style="color: rgb(201, 148, 129);"><i class="fas fa-envelope"> contact@virtuodesigns.online</i></a></h3> <br><br>
+                <h3><a href="https://wa.me/+277697714283?text=Hello%20VirtuoDesigns!" style="color: rgb(201, 148, 129);"><i class="fab fa-whatsapp"> Whatsapp</i></a></h3> <br><br>
             </div>
-            
         </div>
     </header>
 
@@ -76,18 +89,22 @@
     <section class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Get in Touch</h2>
-            <form>
+            <form action="https://formspree.io/f/mkggewyj" method="POST">
                 <div class="mb-3">
                     <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <div style="display: none;">
+                    <label for="honeypot" class="form-label">Leave this blank</label>
+                    <input type="text" name="_honeypot" id="honeypot">
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
@@ -95,16 +112,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>© 2025 Virtuo Designs. All rights reserved. | Company Registration: 2025/014412/07</p>
-            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Virtuo Designs. All rights reserved | Company Registration: 2025/014412/07</p>
+            <div class="social-icons">
+                <a href="https://wa.me/+27781478462?text=Hello%20VirtuoDesigns!"><i class="fab fa-whatsapp"></i></a>
+                <a target="_blank" href="https://x.com/virtuodesigns"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/virtuo-designs/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </footer>
 
-    <script>        
+    <script>
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
@@ -112,6 +131,3 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-
-</body>
-</html>

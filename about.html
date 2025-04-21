@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Virtuo Designs, your trusted partner in creative web solutions. Our team is passionate about delivering exceptional results.">
-    <title>About Us | Virtuo Designs</title>
+    <meta name="description" content="Virtuo Designs, expert web developers in South Africa, deliver innovative React and Flutter solutions for platforms like Campus Marketplace and KasiBeats.">
+    <meta property="og:title" content="About Virtuo Designs | Expert Web Developers South Africa">
+    <meta property="og:description" content="Virtuo Designs delivers innovative web and digital solutions tailored to your needs, specializing in React, Flutter, and Bootstrap.">
+    <meta property="og:image" content="https://virtuodesigns.online/images/2.png">
+    <meta property="og:url" content="https://virtuodesigns.online/about.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Virtuo Designs | Web Developers South Africa">
+    <meta name="twitter:description" content="Discover how Virtuo Designs transforms ideas into reality with cutting-edge web development.">
+    <meta name="twitter:image" content="https://virtuodesigns.online/images/2.png">
+    <title>About Virtuo Designs | Expert Web Developers South Africa</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://virtuodesigns.online/about.html">
     <style>
         .navbar {
             background: #24243e;
@@ -27,29 +37,28 @@
         .navbar a:hover {
             color: #f3c623;
         }
-
         @keyframes moveWave {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 100% 0;
-            }
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 0; }
         }
-
         .wave {
             background: url('svg/wavee.svg') repeat-x;
             height: 100px;
             background-size: cover;
             animation: moveWave 4s linear infinite;
         }
-
         .about-text p {
             line-height: 1.8;
         }
-
-
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJCMW3BRWY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZJCMW3BRWY');
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -72,7 +81,7 @@
     <header class="hero hero-about d-flex align-items-center text-center">
         <div class="container">
             <h1 class="display-4 text-white animate-fade-in">About Virtuo Designs</h1>
-            <p class="text-light lead animate-fade-in">Turning ideas into reality with cutting-edge technology and creative design.</p>
+            <p class="text-light lead animate-fade-in">Turning ideas into reality with cutting-edge web development.</p>
         </div>
     </header>
 
@@ -82,11 +91,11 @@
             <h2 class="text-center mb-4">Who We Are</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="images/2.png" alt="Team Collaboration" class="img-fluid rounded shadow">
+                    <img src="images/2.png" alt="Virtuo Designs web development team collaboration" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-md-6">
-                    <p>Virtuo Designs is a team of passionate developers, designers, and strategists dedicated to creating digital solutions that empower businesses and individuals. Founded on the principles of innovation, quality, and customer satisfaction, we pride ourselves on delivering projects that exceed expectations.</p>
-                    <p>From sleek websites to powerful mobile apps, we blend creativity and technology to craft experiences that stand out. At Virtuo Designs, your vision is our mission.</p>
+                    <p>Virtuo Designs is a team of passionate web developers and designers dedicated to creating digital solutions that empower businesses and communities. Founded in Durban, South Africa, we specialize in building scalable web platforms using React, Flutter, and Bootstrap, as showcased in projects like <a href="portfolio.html">Campus Marketplace</a>, KasiBeats, and Umnini Community Trust.</p>
+                    <p>From dynamic marketplaces to community-driven websites, we blend creativity and technology to craft experiences that stand out. At Virtuo Designs, your vision is our mission.</p>
                 </div>
             </div>
         </div>
@@ -101,33 +110,35 @@
                 <div class="col-md-4 text-center">
                     <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
                     <h4>Innovation</h4>
-                    <p>We embrace new ideas and push the boundaries of technology.</p>
+                    <p>We embrace new ideas and push the boundaries of web technology.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-users fa-3x text-success mb-3"></i>
+                    <i class="fas fa-users fa-3'announce-success mb-3"></i>
                     <h4>Collaboration</h4>
                     <p>Working closely with our clients to ensure their success.</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <i class="fas fa-star fa-3x text-warning mb-3"></i>
                     <h4>Excellence</h4>
-                    <p>Delivering quality solutions with precision and attention to detail.</p>
+                    <p>Delivering quality web solutions with precision and attention to detail.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>© 2025 Virtuo Designs. All rights reserved. | Company Registration: 2025/014412/07</p>
-            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Virtuo Designs. All rights reserved | Company Registration: 2025/014412/07</p>
+            <div class="social-icons">
+                <a href="https://wa.me/+27781478462?text=Hello%20VirtuoDesigns!"><i class="fab fa-whatsapp"></i></a>
+                <a target="_blank" href="https://x.com/virtuodesigns"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/virtuo-designs/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </footer>
 
-    <script>        
+    <script>
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             const hamburger = document.querySelector('.hamburger-menu');
@@ -137,6 +148,3 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-
-</body>
-</html>
